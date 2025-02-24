@@ -63,7 +63,6 @@ function Segfour() {
                     <h2>Wanna Join the interno</h2>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                     <button>Contact us</button>
-
                 </section>
         </>
         
