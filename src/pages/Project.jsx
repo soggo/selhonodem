@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 const Project = () =>{
 
     const gridItems = [
@@ -31,16 +32,18 @@ const Project = () =>{
   </div>
  
   <div className="ProjectsGrid">
-                {gridItems.map((item, index) => (
-                    <div className="ProjectsGridItem" key={index}>
-                        <img src={item.image} alt={item.title} />
-                        <div className="ProjectsGridDescr">
-                            <h4>{item.title}</h4>
-                            <button className="circular">~</button>
-                        </div>
-                    </div>
-                ))}
+        {gridItems.map((item, index) => (
+          <Link to="/details" key={index}>
+            <div className="ProjectsGridItem">
+              <img src={item.image} alt={item.title} />
+              <div className="ProjectsGridDescr">
+                <h4>{item.title}</h4>
+                <button className="circular">~</button>
+              </div>
             </div>
+          </Link>
+        ))}
+      </div>
   </>
   );
 }

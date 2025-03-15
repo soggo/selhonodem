@@ -6,7 +6,7 @@ function Navbar() {
           <img src="/SELHONO.png" alt="SELHONO Logo" />
         </div>
         <ul className="nav-links">
-        <li><Link to="/home">Home</Link></li>
+        <li><Link index >Home</Link></li>
         <li><Link to="/team">Team</Link></li>
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/project">Project</Link></li>
